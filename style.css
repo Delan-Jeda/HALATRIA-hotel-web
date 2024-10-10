@@ -113,7 +113,7 @@ nav a:hover {
 }
 .bimg{
     width: 250%; /* Small div width */
-    height: 350vh; /* Small div height */
+    height: 390px; /* Small div height */
      /* To prevent image overflow */
     position: relative; /* To allow absolute positioning */
   }
@@ -219,11 +219,12 @@ html, body {
   
 
 .res img{
-    width: 100%; /* Responsive */
-    max-height: 100vh; /* Prevent overflow */
-    object-fit: cover;    /* Each image fills its grid cell */
+    width: 100%;      /* Each image fills its grid cell */
+    height: 100%;     /* Each image fills its grid cell */
+    object-fit: cover; /* Ensures the image fills without distortion */
+}
             
-        }
+        
 
 
 
@@ -270,7 +271,7 @@ html, body {
              } 
              .bimg{
                 width: 100%;
-                height: auto;
+                height: 200px;
              }
              
              
