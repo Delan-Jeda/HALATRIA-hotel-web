@@ -315,6 +315,9 @@ html, body {
               .h3{
                 font-size: small;
               }
+              .image-container{
+                width: 400px;
+              }
             }
              
             
