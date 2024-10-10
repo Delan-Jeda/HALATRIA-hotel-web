@@ -1,6 +1,4 @@
-html, body {
-    height: 100%; 
-  }
+
 * {
     margin: 0;
     padding: 0;
@@ -115,7 +113,7 @@ nav a:hover {
 }
 .bimg{
     width: 250%; /* Small div width */
-    height: 350PX; /* Small div height */
+    height: 350vh; /* Small div height */
      /* To prevent image overflow */
     position: relative; /* To allow absolute positioning */
   }
@@ -148,7 +146,7 @@ nav a:hover {
     background-color: white;
     display: flex;
     border-radius: 10PX;
-    height: 90VH;
+    height: auto;
 }
 
 
@@ -200,7 +198,7 @@ nav a:hover {
 .now{
     
     background-color: black  ;
-    height: 50%;
+    height: auto;
     padding: 10px;
     padding-bottom: 20px;
 }
@@ -221,9 +219,10 @@ html, body {
   
 
 .res img{
-            width: 100%;      /* Each image fills its grid cell */
-            height: 100%;     /* Each image fills its grid cell */
-            object-fit: cover; /* Ensures the image fills without distortion */
+    width: 100%; /* Responsive */
+    max-height: 100vh; /* Prevent overflow */
+    object-fit: cover;    /* Each image fills its grid cell */
+            
         }
 
 
@@ -249,7 +248,7 @@ html, body {
                 width: 100%;
                 background-color: #333;
                 position: absolute; /* Make sure the nav is on top */
-                top: 60px; /* Position below the navbar */
+                top: 60%; /* Position below the navbar */
                 left: 0;
             }
             .navcon a {
@@ -270,8 +269,8 @@ html, body {
 
              } 
              .bimg{
-                width: 500PX;
-                height: 300px;
+                width: 100%;
+                height: auto;
              }
              
              
@@ -283,14 +282,15 @@ html, body {
                 flex-direction: column;
                 overflow: hidden;
                 object-fit: contain;
-                height: 20%;
+                height: auto;
 
             }
             .WEREY{
                 margin-top: 10PX;
             }
             .termsun{
-                padding: 0PX;
+                padding: 0;
+                margin-bottom: 15px;
             }
 
         
